@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B211A">
+<title>Mushfick Jahan Mojahid — Personal Portfolio</title>
+<meta name="description" content="Personal portfolio of Mushfick Jahan Mojahid — a university student in Khulna, from Rangpur City. A visual journal of travel, music, and everyday moments.">
+<meta name="author" content="Mushfick Jahan Mojahid">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mushfick Jahan Mojahid — Personal Portfolio">
+<meta property="og:description" content="Travel, music, and everyday moments — a personal portfolio from Khulna, Bangladesh.">
+<meta property="og:image" content="assets/profile-photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/profile.jpg" type="image/jpeg">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}.hero__portrait-wrap{opacity:1!important}</style></noscript>
+</head>
+<body>
+
+<a class="skip-link" href="#home">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+<!-- ============ ICON LIBRARY ============ -->
+<svg class="svg-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M12 2.5c0 0-7.5 4.6-7.5 11A7.5 7.5 0 0 0 12 21a7.5 7.5 0 0 0 7.5-7.5c0-6.4-7.5-11-7.5-11Z"/><path d="M12 21V8.5"/><path d="M12 13.2 8.4 10M12 16.6l3.6-3.2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10.3" r="2.6"/></symbol>
+  <symbol id="i-plane" viewBox="0 0 24 24"><path d="M20.5 3.5 3.9 10.2a.6.6 0 0 0-.1 1l5.3 2.2 2.2 5.3a.6.6 0 0 0 1-.1L19 4.9a.5.5 0 0 0-.1-1.4Z"/><path d="M9.1 13.4 20.5 3.5"/></symbol>
+  <symbol id="i-note" viewBox="0 0 24 24"><path d="M9 18V5.4l10-2v12.2"/><circle cx="6.6" cy="18" r="2.6"/><circle cx="16.6" cy="15.6" r="2.6"/></symbol>
+  <symbol id="i-knight" viewBox="0 0 24 24"><path d="M5.5 20h13"/><path d="M6.8 17h10.4l-1.1-4.2a2 2 0 0 1-2-1.6H9.9a2 2 0 0 1-2 1.6L6.8 17Z"/><path d="M9.9 11.2 8.2 6.4A2.2 2.2 0 0 1 12 4.1a2.2 2.2 0 0 1 3.8 2.3l-1.7 4.8"/><path d="M12 6.6h2.6"/></symbol>
+  <symbol id="i-ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.6"/><path d="M3.9 9.6c3.4.5 5.2-.6 6.6-2.6 1.3-1.9 1.7-4.4 1.5-7.3"/><path d="M7.9 3.6c1.3 2.4 3.6 3.6 6 3.6 2.8 0 5.2-1.4 6.4-3.2"/></symbol>
+  <symbol id="i-horn" viewBox="0 0 24 24"><path d="M4 10.5v3a1.5 1.5 0 0 0 1.5 1.5H7l7.5 4.2V4.8L7 9H5.5A1.5 1.5 0 0 0 4 10.5Z"/><path d="M18 9.2a4.4 4.4 0 0 1 0 5.6"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3.2 8.4h3.3l1.4-2.3h7.9l1.4 2.3h3.6v10.4H3.2Z"/><circle cx="12" cy="13.4" r="3.5"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.42.06-.64.31-.22.25-.84.82-.84 2.01s.87 2.34 1 2.5c.12.17 1.72 2.63 4.17 3.69.58.25 1.04.4 1.4.51.59.19 1.12.16 1.54.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 20V5"/><path d="m6 11 6-6 6 6"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24"><path d="M9.4 6.5C6.3 7.8 4.4 10.3 4.4 13.6c0 2.6 1.5 4 3.6 4 1.9 0 3.3-1.4 3.3-3.2 0-1.8-1.2-3.1-3-3.1-.3 0-.6 0-.9.1.4-1.4 1.6-2.6 3.2-3.3l-1.2-1.6Z"/><path d="M18.6 6.5c-3.1 1.3-5 3.8-5 7.1 0 2.6 1.5 4 3.6 4 1.9 0 3.3-1.4 3.3-3.2 0-1.8-1.2-3.1-3-3.1-.3 0-.6 0-.9.1.4-1.4 1.6-2.6 3.2-3.3l-1.2-1.6Z"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m8 5 7 7-7 7"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8.2 5.4v13.2a.6.6 0 0 0 .93.5l10.2-6.6a.6.6 0 0 0 0-1L9.13 4.9a.6.6 0 0 0-.93.5Z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="m6.4 6.4 11.2 11.2M17.6 6.4 6.4 17.6"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24"><path d="M9.2 4H4v5.2M14.8 4H20v5.2M14.8 20H20v-5.2M9.2 20H4v-5.2"/></symbol>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="#home" aria-label="Mushfick Jahan Mojahid — home">
+      <span class="brand__mark" aria-hidden="true">MJ</span>
+      <span class="brand__text">
+        <span class="brand__name">Mushfick Jahan Mojahid</span>
+        <span class="brand__sub">Khulna, Bangladesh</span>
+      </span>
+    </a>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul class="primary-nav__list">
+        <li><a class="nav-link is-active" href="#home" data-nav>Home</a></li>
+        <li><a class="nav-link" href="#about" data-nav>About</a></li>
+        <li><a class="nav-link" href="#university" data-nav>Khulna University</a></li>
+        <li><a class="nav-link" href="#music" data-nav>Music &amp; Songs</a></li>
+        <li><a class="nav-link" href="#travel-memories" data-nav>Travel Memories</a></li>
+        <li><a class="nav-link" href="#contact" data-nav>Contact</a></li>
+      </ul>
+      <a class="btn btn--small btn--outline nav-cta" href="#contact">Say hello</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+  </div>
+  <div class="site-header__progress" aria-hidden="true"><span id="header-progress"></span></div>
+</header>
+<div class="nav-scrim" id="nav-scrim" hidden></div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true">
+      <span class="hero__orb hero__orb--1"></span>
+      <span class="hero__orb hero__orb--2"></span>
+      <span class="hero__grid"></span>
+      <svg class="hero__sprig" viewBox="0 0 200 260" fill="none" aria-hidden="true">
+        <path d="M100 260V60" stroke="currentColor" stroke-width="1.2" opacity=".55"/>
+        <path d="M100 96c-22 0-38-13-40-32 21-2 37 11 40 32Z" stroke="currentColor" stroke-width="1.2" opacity=".4"/>
+        <path d="M100 62c20 0 34-11 36-28-19-2-33 9-36 28Z" stroke="currentColor" stroke-width="1.2" opacity=".4"/>
+        <path d="M100 140c-24 0-42-14-44-35 23-2 41 12 44 35Z" stroke="currentColor" stroke-width="1.2" opacity=".3"/>
+        <path d="M100 104c22 0 39-13 41-33-22-2-38 12-41 33Z" stroke="currentColor" stroke-width="1.2" opacity=".3"/>
+        <path d="M100 190c-20 0-35-12-37-30 20-2 35 10 37 30Z" stroke="currentColor" stroke-width="1.2" opacity=".22"/>
+      </svg>
+    </div>
+
+    <div class="hero__inner wrap">
+      <div class="hero__copy">
+        <p class="eyebrow reveal"><span class="eyebrow__dot"></span> Lives in Khulna &nbsp;·&nbsp; From Rangpur City</p>
+        <h1 class="hero__title reveal" data-delay="1">
+          <span class="hero__hello">Hello, I&rsquo;m</span>
+          Mushfick Jahan<br>
+          <em class="hero__accent">Mojahid</em>
+        </h1>
+        <p class="hero__lead reveal" data-delay="2">
+          A university student in Khulna who likes long roads, loud songs, and the quiet hour
+          between classes. This is the corner of the internet where I keep the good parts.
+        </p>
+        <div class="hero__actions reveal" data-delay="3">
+          <a class="btn btn--primary" href="#about">Discover my story <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="text-link" href="#interests">Explore my interests <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <dl class="hero__facts reveal" data-delay="4">
+          <div class="fact">
+            <dt>Education</dt>
+            <dd>Khulna University</dd>
+          </div>
+          <div class="fact">
+            <dt>Hobby</dt>
+            <dd>Travelling</dd>
+          </div>
+          <div class="fact">
+            <dt>Interest</dt>
+            <dd>Music</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero__visual reveal" data-delay="2">
+        <div class="portrait-wrap" id="portrait-wrap">
+          <span class="portrait-wrap__halo" aria-hidden="true"></span>
+          <span class="portrait-wrap__ring" aria-hidden="true"></span>
+          <figure class="portrait">
+            <picture>
+              <img src="assets/profile.jpg"
+                   width="1200" height="1398"
+                   alt="Portrait of Mushfick Jahan Mojahid"
+                   fetchpriority="high" decoding="async">
+            </picture>
+            <figcaption class="portrait__caption">
+              <span class="portrait__caption-label">Portrait</span>
+              <span class="portrait__caption-name">Mushfick Jahan Mojahid</span>
+            </figcaption>
+          </figure>
+          <span class="chip chip--location"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><span><small>Currently in</small>Khulna</span></span>
+          <span class="chip chip--interests"><svg class="i" aria-hidden="true"><use href="#i-note"/></svg><span><small>Into</small>Travel · Music</span></span>
+        </div>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#about" aria-label="Scroll to the about section">
+      <span class="hero__scroll-line" aria-hidden="true"></span>
+      <span class="hero__scroll-text">Scroll</span>
+    </a>
+  </section>
+
+  <!-- ============ RIBBON ============ -->
+  <div class="ribbon" aria-hidden="true">
+    <div class="ribbon__track">
+      <span class="ribbon__group">
+        <em>Travel</em><i>✦</i><em>Music</em><i>✦</i><em>Khulna</em><i>✦</i><em>Rangpur</em><i>✦</i>
+        <em>Chess</em><i>✦</i><em>Cricket</em><i>✦</i><em>Ever tried</em><i>✦</i>
+        <em>Travel</em><i>✦</i><em>Music</em><i>✦</i><em>Khulna</em><i>✦</i><em>Rangpur</em><i>✦</i>
+        <em>Chess</em><i>✦</i><em>Cricket</em><i>✦</i><em>Ever tried</em><i>✦</i>
+      </span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="section-label"><span>01</span> About</p>
+        <h2 class="section-title">Rooted in Khulna,<br><em>drawn to everywhere else.</em></h2>
+      </header>
+
+      <div class="about__grid">
+        <div class="about__story">
+          <p class="about__statement reveal">
+            I&rsquo;m a student from Rangpur City, living in Khulna, and I have never quite
+            managed to stay still for long.
+          </p>
+          <p class="about__body reveal" data-delay="1">
+            The profile I keep public says a few plain things: I live in Khulna, I&rsquo;m from
+            Rangpur City, I study at Khulna University, and travelling is the hobby I return to
+            most. It also lists music as an interest, chess and cricket among the teams I follow,
+            and a handful of pages I keep close. That is an honest snapshot &mdash; not a résumé.
+          </p>
+          <p class="about__body reveal" data-delay="2">
+            So this page is not a list of achievements. It is a small, well-kept room. A place for
+            the photographs from the road, the songs that carried a long journey home, and the
+            ordinary afternoons that would otherwise disappear. Some corners are filled in; the ones
+            that are not are clearly marked, waiting for the right photograph or the right story.
+          </p>
+
+          <figure class="pull-quote reveal" data-delay="3">
+            <svg class="pull-quote__mark i" aria-hidden="true"><use href="#i-quote"/></svg>
+            <blockquote>
+              <p>Ever tried. Ever failed. No matter &mdash; try again, fail again, fail better. The world is yours.</p>
+            </blockquote>
+            <figcaption>The line on the cover of my Facebook profile.</figcaption>
+          </figure>
+        </div>
+
+        <aside class="about__aside reveal" data-delay="2">
+          <div class="fact-card">
+            <h3 class="fact-card__title">Profile details</h3>
+            <ul class="fact-list">
+              <li><span>Name</span><strong>Mushfick Jahan Mojahid</strong></li>
+              <li><span>Lives in</span><strong>Khulna</strong></li>
+              <li><span>From</span><strong>Rangpur City</strong></li>
+              <li><span>Education</span><strong>Khulna University</strong></li>
+              <li><span>Hobby</span><strong>Travelling</strong></li>
+              <li><span>Interests</span><strong>Music</strong></li>
+              <li><span>Sports &amp; teams</span><strong>Chess · Addicts · Bangladesh Cricket</strong></li>
+              <li><span>Birthday</span><strong>9 November</strong></li>
+              <li><span>Username</span><strong>@ mojahid.30</strong></li>
+            </ul>
+            <p class="fact-card__note">
+              Taken from my public Facebook profile. University details are profile-listed &mdash;
+              no degree, department or year is claimed here.
+            </p>
+          </div>
+          <div class="source-card">
+            <svg class="i source-card__icon" aria-hidden="true"><use href="#i-leaf"/></svg>
+            <h3>What&rsquo;s real here</h3>
+            <p>
+              Every line marked <em>Verified</em> comes from the public profile I supplied.
+              Anything unfinished is marked <em>Placeholder</em> and waits for my own photos,
+              playlists and stories.
+            </p>
+            <span class="tag tag--verified">Verified source</span>
+            <span class="tag tag--placeholder">Placeholder</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTERESTS ============ -->
+  <section class="section interests" id="interests">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="section-label"><span>02</span> Interests</p>
+        <h2 class="section-title">The things I keep<br><em>coming back to.</em></h2>
+        <p class="section-sub">
+          Listed as they appear on my profile &mdash; a hobby, a few interests, and the teams and
+          athletes I keep an eye on. Two of them get their own rooms further down the page.
+        </p>
+      </header>
+
+      <div class="interest-grid">
+        <article class="interest-card reveal" data-tone="mint">
+          <span class="interest-card__icon"><svg class="i" aria-hidden="true"><use href="#i-plane"/></svg></span>
+          <p class="interest-card__tag">Hobby</p>
+          <h3>Travelling</h3>
+          <p class="interest-card__copy">The hobby on my profile &mdash; and the reason for the <a href="#travel">journey log</a> below.</p>
+          <a class="interest-card__link" href="#travel">Open travel section <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="interest-card reveal" data-delay="1" data-tone="accent">
+          <span class="interest-card__icon"><svg class="i" aria-hidden="true"><use href="#i-note"/></svg></span>
+          <p class="interest-card__tag">Interest</p>
+          <h3>Music</h3>
+          <p class="interest-card__copy">Songs for the walk home, the long drive, and the nights that need a little noise.</p>
+          <a class="interest-card__link" href="#music">Open music section <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="interest-card reveal" data-delay="2" data-tone="mint">
+          <span class="interest-card__icon"><svg class="i" aria-hidden="true"><use href="#i-knight"/></svg></span>
+          <p class="interest-card__tag">Sports &amp; athletes</p>
+          <h3>Chess</h3>
+          <p class="interest-card__copy">One of the teams listed on my profile. Quiet, deliberate, and endlessly debatable.</p>
+        </article>
+
+        <article class="interest-card reveal" data-delay="3" data-tone="accent">
+          <span class="interest-card__icon"><svg class="i" aria-hidden="true"><use href="#i-ball"/></svg></span>
+          <p class="interest-card__tag">Sports &amp; athletes</p>
+          <h3>Bangladesh Cricket</h3>
+          <p class="interest-card__copy">Listed on my profile as <em>The Tigers</em>. Match days are part of the calendar now.</p>
+        </article>
+
+        <article class="interest-card reveal" data-delay="4" data-tone="mint">
+          <span class="interest-card__icon"><svg class="i" aria-hidden="true"><use href="#i-horn"/></svg></span>
+          <p class="interest-card__tag">Sports &amp; athletes</p>
+          <h3>Addicts</h3>
+          <p class="interest-card__copy">Another name listed under teams and athletes on my profile.</p>
+        </article>
+
+        <article class="interest-card interest-card--add reveal" data-delay="5">
+          <span class="interest-card__icon"><svg class="i" aria-hidden="true"><use href="#i-horn"/></svg></span>
+          <p class="interest-card__tag">Interest</p>
+          <h3>Amar Dehokhan</h3>
+          <p class="interest-card__copy">A page I keep close, listed as an interest on my profile.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UNIVERSITY ============ -->
+  <section class="section university" id="university">
+    <div class="university__bg" aria-hidden="true">
+      <span class="university__glow"></span>
+      <svg class="university__crest" viewBox="0 0 320 320" fill="none">
+        <circle cx="160" cy="160" r="118" stroke="currentColor" stroke-width="1.2" opacity=".35"/>
+        <circle cx="160" cy="160" r="104" stroke="currentColor" stroke-width="1" stroke-dasharray="6 10" opacity=".28"/>
+        <path d="M112 196V132l48-30 48 30v64" stroke="currentColor" stroke-width="1.4" opacity=".45"/>
+        <path d="M138 196v-46h44v46" stroke="currentColor" stroke-width="1.4" opacity=".32"/>
+        <path d="M96 200h128M88 214h144" stroke="currentColor" stroke-width="1.2" opacity=".26"/>
+        <path d="M160 60v14M160 246v14" stroke="currentColor" stroke-width="1.2" opacity=".3"/>
+      </svg>
+    </div>
+
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="section-label"><span>03</span> Khulna University</p>
+        <h2 class="section-title">Khulna University &mdash;<br><em>Campus Memories</em></h2>
+        <p class="section-sub">
+          Campus atmosphere, university moments, and memories worth keeping.
+        </p>
+      </header>
+
+      <div class="university__layout">
+        <figure class="campus-video reveal">
+          <video class="campus-video__player" controls preload="metadata" playsinline width="640" height="272">
+            <source src="assets/videos/campus-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </figure>
+
+        <aside class="university__aside reveal" data-delay="1">
+          <div class="campus-note">
+            <span class="campus-note__icon"><svg class="i" aria-hidden="true"><use href="#i-knight"/></svg></span>
+            <h3>Where I study</h3>
+            <p>
+              Khulna University is listed as my education on my public profile. Everything on this page
+              comes either from that profile or from videos I have shared myself.
+            </p>
+            <span class="tag tag--verified">Verified source</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MUSIC ============ -->
+  <section class="section music" id="music">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="section-label"><span>04</span> Music &amp; songs</p>
+        <h2 class="section-title">Music &amp; <em>Songs</em></h2>
+        <p class="section-sub">
+          Sounds, songs, and moments that make memories.
+        </p>
+      </header>
+
+      <div class="music__grid">
+        <div class="player reveal">
+          <div class="player__disc" aria-hidden="true">
+            <span class="player__groove"></span>
+            <span class="player__label">MJ</span>
+          </div>
+          <div class="player__meta">
+            <p class="player__eyebrow">On repeat</p>
+            <h3 class="player__title">Songs shared on my profile</h3>
+            <p class="player__copy">
+              Titles lifted from the posts on my public profile. Swap in my own favourites once
+              the playlist is ready.
+            </p>
+            <ul class="equalizer" aria-hidden="true">
+              <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="tracklist reveal" data-delay="1">
+          <li class="track">
+            <span class="track__num">01</span>
+            <span class="track__body">
+              <strong>Dil Jahan Pe Le Chala</strong>
+              <small>Amit Trivedi &middot; shared on my profile</small>
+            </span>
+            <span class="tag tag--verified">Verified</span>
+          </li>
+          <li class="track">
+            <span class="track__num">02</span>
+            <span class="track__body">
+              <strong>Nature&rsquo;s Embrace</strong>
+              <small>Shared on my profile</small>
+            </span>
+            <span class="tag tag--verified">Verified</span>
+          </li>
+          <li class="track">
+            <span class="track__num">03</span>
+            <span class="track__body">
+              <strong>Encore</strong>
+              <small>Shared on my profile</small>
+            </span>
+            <span class="tag tag--verified">Verified</span>
+          </li>
+          <li class="track track--empty">
+            <span class="track__num">04</span>
+            <span class="track__body">
+              <strong>Favourite artist</strong>
+              <small>Waiting to be filled in by me</small>
+            </span>
+            <span class="tag tag--placeholder">Placeholder</span>
+          </li>
+          <li class="track track--empty">
+            <span class="track__num">05</span>
+            <span class="track__body">
+              <strong>Playlist link</strong>
+              <small>Spotify / YouTube / Apple Music</small>
+            </span>
+            <span class="tag tag--placeholder">Placeholder</span>
+          </li>
+        </ul>
+      </div>
+
+      <a class="video-card video-card--music reveal"
+         href="https://www.facebook.com/61567677080211/videos/pcb.122213602232589236/1140240762027184?__cft__%5B0%5D=AZhEVMAKh1xEheqoI2ViueRXGymmItp841lvKhAtyxoUb1B1EEGBXQOZRyZa9Z0Hxh_0rxv5U4hqu3VXUvCQUDDkAGc0jN9ktw2O9XDSV8AvSjgRnI75lbcj-XA3kxtGmcLVyhW1QgAagcgYfqvUCQ&__tn__=*b0H-R"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Watch the music video on Facebook (opens in a new tab)">
+        <span class="video-card__media video-card__media--music">
+          <span class="music-cover">
+            <span class="music-cover__disc">
+              <span class="music-cover__label">MJ</span>
+            </span>
+            <ul class="equalizer equalizer--cover" aria-hidden="true">
+              <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            </ul>
+          </span>
+          <span class="play-btn" aria-hidden="true">
+            <span class="play-btn__ring"></span>
+            <svg class="i i--fill"><use href="#i-play"/></svg>
+          </span>
+        </span>
+        <span class="video-card__body">
+          <span class="video-card__eyebrow">Music video</span>
+          <span class="video-card__title">Watch Music Video</span>
+          <span class="video-card__copy">
+            Sounds, songs, and moments that make memories. The video is hosted on Facebook &mdash; the
+            card opens it in a new tab, so Facebook may ask you to sign in first.
+          </span>
+          <span class="video-card__cta">
+            Watch Music Video
+            <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </span>
+          <span class="sr-only">(opens in a new tab)</span>
+        </span>
+      </a>
+
+      <div class="music__pages reveal">
+        <p class="music__pages-label">Pages I keep close</p>
+        <ul class="chip-list">
+          <li class="chip chip--static"><svg class="i" aria-hidden="true"><use href="#i-horn"/></svg> Amar Dehokhan (Official)</li>
+          <li class="chip chip--static"><svg class="i" aria-hidden="true"><use href="#i-note"/></svg> Addicts</li>
+          <li class="chip chip--static"><svg class="i" aria-hidden="true"><use href="#i-note"/></svg> Music</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAVEL ============ -->
+  <section class="section travel" id="travel">
+    <div class="travel__bg" aria-hidden="true">
+      <svg class="route-map" viewBox="0 0 800 420" fill="none">
+        <path d="M60 320C160 300 180 210 300 205c110-5 130 60 215 40 70-16 120-70 225-95" stroke="currentColor" stroke-width="1.4" stroke-dasharray="7 9" opacity=".55"/>
+        <path d="M60 320C160 300 180 210 300 205c110-5 130 60 215 40 70-16 120-70 225-95" stroke="currentColor" stroke-width="9" opacity=".06" stroke-linecap="round"/>
+        <circle cx="60" cy="320" r="6" fill="currentColor" opacity=".9"/>
+        <circle cx="300" cy="205" r="5" fill="currentColor" opacity=".55"/>
+        <circle cx="515" cy="245" r="5" fill="currentColor" opacity=".55"/>
+        <circle cx="740" cy="150" r="6" fill="currentColor" opacity=".9"/>
+      </svg>
+    </div>
+
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="section-label"><span>05</span> Travel &amp; exploration</p>
+        <h2 class="section-title">Maps I keep<br><em>folding in half.</em></h2>
+        <p class="section-sub">
+          Travelling is the hobby on my profile, and the distance between Khulna and Rangpur City
+          is the one route I know by heart. The photographs from the road are in the Travel Memories
+          gallery below &mdash; this part is the map behind them.
+        </p>
+      </header>
+
+      <div class="travel__feature reveal">
+        <div class="route-card">
+          <p class="route-card__label">The route I know best</p>
+          <div class="route-card__stops">
+            <div class="route-card__stop">
+              <span class="route-card__dot"></span>
+              <strong>Khulna</strong>
+              <small>Where I live and study</small>
+            </div>
+            <span class="route-card__path" aria-hidden="true"></span>
+            <div class="route-card__stop">
+              <span class="route-card__dot"></span>
+              <strong>Rangpur City</strong>
+              <small>Where I come from</small>
+            </div>
+          </div>
+          <p class="route-card__note">
+            Both places come straight from my public profile. The line between them is drawn here
+            as decoration, not as a measured distance.
+          </p>
+        </div>
+
+        <article class="journey-card">
+          <p class="journey-card__tag">Pinned on my profile</p>
+          <h3>Takar Tour</h3>
+          <p class="journey-card__copy">
+            The pinned post on my profile carries this title. The story behind it is still being
+            written &mdash; this one belongs to me.
+          </p>
+          <p class="journey-card__status"><span class="dot dot--pending"></span> Awaiting notes</p>
+        </article>
+      </div>
+
+      <div class="travel__grid">
+        <figure class="slot slot--tall reveal">
+          <img class="slot__image" src="assets/travel/marine-drive-beach.png"
+               width="1080" height="861"
+               alt="Marine Drive beach in Cox&rsquo;s Bazar"
+               loading="lazy" decoding="async">
+          <figcaption><strong>Travel photograph</strong><span>Cox&rsquo;s Bazar &mdash; Marine Drive Beach</span></figcaption>
+        </figure>
+
+        <figure class="slot reveal" data-delay="1">
+          <img class="slot__image" src="assets/travel/sylhet-tea-garden.jpeg"
+               width="395" height="506"
+               alt="Tea garden in Sylhet"
+               loading="lazy" decoding="async">
+          <figcaption><strong>Travel photograph</strong><span>Sylhet &mdash; Tea Garden</span></figcaption>
+        </figure>
+
+        <figure class="slot reveal" data-delay="2">
+          <img class="slot__image" src="assets/travel/sajek-valley.jpeg"
+               width="678" height="452"
+               alt="Sajek Valley landscape"
+               loading="lazy" decoding="async">
+          <figcaption><strong>Travel photograph</strong><span>Sajek Valley</span></figcaption>
+        </figure>
+
+        <div class="travel__note reveal" data-delay="3">
+          <svg class="i travel__note-icon" aria-hidden="true"><use href="#i-leaf"/></svg>
+          <h3>No borrowed places.</h3>
+          <p>
+            I have not listed destinations I have not been to and photographs I have not taken.
+            My own pictures live in the Travel Memories gallery &mdash; these frames stay empty until
+            the remaining journeys are photographed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAVEL MEMORIES ============ -->
+  <section class="section travel-memories" id="travel-memories">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="section-label"><span>06</span> Travel Memories</p>
+        <h2 class="section-title">Travel <em>Memories</em></h2>
+        <p class="section-sub">
+          Little journeys, beautiful places, and memories captured along the way.
+        </p>
+      </header>
+
+      <div class="tm-grid">
+        <a class="tm-item tm-item--feature reveal"
+           href="assets/travel/840602855_122216366240328926_8849937447864943535_n.jpg"
+           data-lightbox data-caption="Travel memory 01"
+           aria-label="Open travel memory 01 in the larger viewer">
+          <img src="assets/travel/840602855_122216366240328926_8849937447864943535_n.jpg"
+               width="1152" height="2048"
+               alt="Travel memory photograph 01 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">01</span>
+          </span>
+        </a>
+
+        <a class="tm-item tm-item--feature reveal" data-delay="1"
+           href="assets/travel/835748929_122216366198328926_1480864214335326519_n.jpg"
+           data-lightbox data-caption="Travel memory 02"
+           aria-label="Open travel memory 02 in the larger viewer">
+          <img src="assets/travel/835748929_122216366198328926_1480864214335326519_n.jpg"
+               width="1280" height="960"
+               alt="Travel memory photograph 02 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">02</span>
+          </span>
+        </a>
+
+        <a class="tm-item tm-item--wide reveal"
+           href="assets/travel/835748922_122216366156328926_6011080957314422225_n.jpg"
+           data-lightbox data-caption="Travel memory 03"
+           aria-label="Open travel memory 03 in the larger viewer">
+          <img src="assets/travel/835748922_122216366156328926_6011080957314422225_n.jpg"
+               width="1280" height="960"
+               alt="Travel memory photograph 03 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">03</span>
+          </span>
+        </a>
+
+        <a class="tm-item reveal" data-delay="1"
+           href="assets/travel/839842858_122216366090328926_5762481526000739955_n.jpg"
+           data-lightbox data-caption="Travel memory 04"
+           aria-label="Open travel memory 04 in the larger viewer">
+          <img src="assets/travel/839842858_122216366090328926_5762481526000739955_n.jpg"
+               width="1086" height="1448"
+               alt="Travel memory photograph 04 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">04</span>
+          </span>
+        </a>
+
+        <a class="tm-item reveal" data-delay="2"
+           href="assets/travel/825351195_122212214972589236_2662415381962029184_n.jpg"
+           data-lightbox data-caption="Travel memory 05"
+           aria-label="Open travel memory 05 in the larger viewer">
+          <img src="assets/travel/825351195_122212214972589236_2662415381962029184_n.jpg"
+               width="2048" height="2048"
+               alt="Travel memory photograph 05 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">05</span>
+          </span>
+        </a>
+
+        <a class="tm-item reveal"
+           href="assets/travel/837715423_122216366726328926_5109980136111748153_n.jpg"
+           data-lightbox data-caption="Travel memory 06"
+           aria-label="Open travel memory 06 in the larger viewer">
+          <img src="assets/travel/837715423_122216366726328926_5109980136111748153_n.jpg"
+               width="1280" height="960"
+               alt="Travel memory photograph 06 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">06</span>
+          </span>
+        </a>
+
+        <a class="tm-item reveal" data-delay="1"
+           href="assets/travel/838639134_122216366684328926_7265847035510716285_n.jpg"
+           data-lightbox data-caption="Travel memory 07"
+           aria-label="Open travel memory 07 in the larger viewer">
+          <img src="assets/travel/838639134_122216366684328926_7265847035510716285_n.jpg"
+               width="1280" height="960"
+               alt="Travel memory photograph 07 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">07</span>
+          </span>
+        </a>
+
+        <a class="tm-item reveal" data-delay="2"
+           href="assets/travel/837039977_122216366642328926_3192237842495394793_n.jpg"
+           data-lightbox data-caption="Travel memory 08"
+           aria-label="Open travel memory 08 in the larger viewer">
+          <img src="assets/travel/837039977_122216366642328926_3192237842495394793_n.jpg"
+               width="1280" height="960"
+               alt="Travel memory photograph 08 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">08</span>
+          </span>
+        </a>
+
+        <a class="tm-item reveal" data-delay="3"
+           href="assets/travel/839869548_122216366600328926_3434183053011159660_n.jpg"
+           data-lightbox data-caption="Travel memory 09"
+           aria-label="Open travel memory 09 in the larger viewer">
+          <img src="assets/travel/839869548_122216366600328926_3434183053011159660_n.jpg"
+               width="2048" height="1536"
+               alt="Travel memory photograph 09 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">09</span>
+          </span>
+        </a>
+
+        <a class="tm-item tm-item--wide reveal"
+           href="assets/travel/838782971_122216366558328926_3052371421703754781_n.jpg"
+           data-lightbox data-caption="Travel memory 10"
+           aria-label="Open travel memory 10 in the larger viewer">
+          <img src="assets/travel/838782971_122216366558328926_3052371421703754781_n.jpg"
+               width="2048" height="1536"
+               alt="Travel memory photograph 10 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">10</span>
+          </span>
+        </a>
+
+        <a class="tm-item reveal" data-delay="1"
+           href="assets/travel/837537704_122216366516328926_5729008693917375273_n.jpg"
+           data-lightbox data-caption="Travel memory 11"
+           aria-label="Open travel memory 11 in the larger viewer">
+          <img src="assets/travel/837537704_122216366516328926_5729008693917375273_n.jpg"
+               width="2048" height="1536"
+               alt="Travel memory photograph 11 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">11</span>
+          </span>
+        </a>
+
+        <a class="tm-item reveal" data-delay="2"
+           href="assets/travel/839334443_122216366474328926_1537596496615967171_n.jpg"
+           data-lightbox data-caption="Travel memory 12"
+           aria-label="Open travel memory 12 in the larger viewer">
+          <img src="assets/travel/839334443_122216366474328926_1537596496615967171_n.jpg"
+               width="2048" height="1536"
+               alt="Travel memory photograph 12 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">12</span>
+          </span>
+        </a>
+
+        <a class="tm-item reveal"
+           href="assets/travel/838650528_122216366432328926_5297292300567111307_n.jpg"
+           data-lightbox data-caption="Travel memory 13"
+           aria-label="Open travel memory 13 in the larger viewer">
+          <img src="assets/travel/838650528_122216366432328926_5297292300567111307_n.jpg"
+               width="1536" height="2048"
+               alt="Travel memory photograph 13 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">13</span>
+          </span>
+        </a>
+
+        <a class="tm-item reveal" data-delay="1"
+           href="assets/travel/838893872_122216366366328926_6151839049937583001_n.jpg"
+           data-lightbox data-caption="Travel memory 14"
+           aria-label="Open travel memory 14 in the larger viewer">
+          <img src="assets/travel/838893872_122216366366328926_6151839049937583001_n.jpg"
+               width="2048" height="1536"
+               alt="Travel memory photograph 14 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">14</span>
+          </span>
+        </a>
+
+        <a class="tm-item tm-item--wide reveal" data-delay="2"
+           href="assets/travel/836330852_122216366324328926_7249234691251460996_n.jpg"
+           data-lightbox data-caption="Travel memory 15"
+           aria-label="Open travel memory 15 in the larger viewer">
+          <img src="assets/travel/836330852_122216366324328926_7249234691251460996_n.jpg"
+               width="2048" height="1536"
+               alt="Travel memory photograph 15 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">15</span>
+          </span>
+        </a>
+
+        <a class="tm-item tm-item--full reveal"
+           href="assets/travel/836918275_122216366282328926_2196281531445164344_n.jpg"
+           data-lightbox data-caption="Travel memory 16"
+           aria-label="Open travel memory 16 in the larger viewer">
+          <img src="assets/travel/836918275_122216366282328926_2196281531445164344_n.jpg"
+               width="1152" height="2048"
+               alt="Travel memory photograph 16 of 16"
+               loading="lazy" decoding="async">
+          <span class="tm-item__overlay" aria-hidden="true">
+            <span class="tm-item__zoom"><svg class="i"><use href="#i-expand"/></svg></span>
+            <span class="tm-item__count">16</span>
+          </span>
+        </a>
+      </div>
+
+      <p class="travel-memories__note reveal">
+        Sixteen of my own photographs, kept exactly as they were taken. Select any frame to view it
+        larger &mdash; use the arrow keys to move through the set and press Escape to close.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery" id="gallery">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="section-label"><span>07</span> Gallery</p>
+        <h2 class="section-title">Frames worth<br><em>keeping.</em></h2>
+        <p class="section-sub">
+          One approved portrait, and a grid of empty frames waiting for the photographs I choose to
+          publish. The travel pictures I have already shared live in the Travel Memories gallery
+          above. Nothing here is pulled from anywhere without my say-so.
+        </p>
+      </header>
+
+      <div class="gallery__grid">
+        <figure class="gallery__item gallery__item--tall reveal">
+          <img src="assets/profile-photo.jpg"
+               srcset="assets/profile-photo-640.jpg 640w, assets/profile-photo.jpg 1200w"
+               sizes="(max-width: 700px) 92vw, 420px"
+               width="1200" height="1398"
+               alt="Portrait of Mushfick Jahan Mojahid" loading="lazy" decoding="async">
+          <figcaption><strong>Portrait</strong><span>Approved &middot; 2026</span></figcaption>
+        </figure>
+
+        <figure class="gallery__item gallery__item--slot reveal" data-delay="1">
+          <img src="assets/campus/khulna-university.jpg"
+               width="820" height="480"
+               alt="Khulna University campus memory"
+               loading="lazy" decoding="async">
+          <figcaption><strong>Campus memory</strong><span>Khulna University</span></figcaption>
+        </figure>
+
+        <figure class="gallery__item gallery__item--slot reveal" data-delay="2">
+          <img src="assets/campus/corridor-class-friend.jpg"
+               width="2048" height="1536"
+               alt="A corridor, a class, and a friend at Khulna University"
+               loading="lazy" decoding="async">
+          <figcaption><strong>Campus memory</strong><span>A corridor, a class, a friend</span></figcaption>
+        </figure>
+
+        <figure class="gallery__item gallery__item--slot gallery__item--wide reveal" data-delay="3">
+          <img src="assets/music/concert-match-night-out.jpg"
+               width="2048" height="1536"
+               alt="A concert, a match, and a night out"
+               loading="lazy" decoding="async">
+          <figcaption><strong>Music or event memory</strong><span>A concert, a match, a night out</span></figcaption>
+        </figure>
+
+        <figure class="gallery__item gallery__item--slot reveal" data-delay="4">
+          <img src="assets/travel/somewhere-new.jpeg"
+               width="952" height="322"
+               alt="Travel photograph from somewhere new"
+               loading="lazy" decoding="async">
+          <figcaption><strong>Travel photograph</strong><span>Somewhere new</span></figcaption>
+        </figure>
+      </div>
+
+      <p class="gallery__note reveal">
+        Photographs are added here only after they are approved for publication. Private pictures
+        are never taken from a profile.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="contact__bg" aria-hidden="true"><span></span></div>
+    <div class="wrap contact__inner">
+      <div class="contact__copy reveal">
+        <p class="section-label"><span>08</span> Contact</p>
+        <h2 class="section-title">Let&rsquo;s stay<br><em>connected.</em></h2>
+        <p class="section-sub">
+          The public links I have shared are my Facebook profile and WhatsApp. Either is the fastest
+          way to reach me &mdash; everything else stays off this page until I decide otherwise.
+        </p>
+        <div class="contact__actions">
+          <a class="btn btn--primary btn--lg" href="https://www.facebook.com/mojahid.mojahid.572519" target="_blank" rel="noopener noreferrer">
+            Open Facebook profile
+            <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+            <span class="sr-only">(opens in a new tab)</span>
+          </a>
+          <a class="text-link" href="#gallery">Browse the gallery <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+
+      <aside class="contact__aside reveal" data-delay="2">
+        <div class="contact-card">
+          <span class="contact-card__icon"><svg class="i" aria-hidden="true"><use href="#i-note"/></svg></span>
+          <h3>Say hello</h3>
+          <p>Message me on Facebook and I&rsquo;ll get back to you when I can.</p>
+          <a class="contact-card__link" href="https://www.facebook.com/mojahid.mojahid.572519" target="_blank" rel="noopener noreferrer">
+            facebook.com/mojahid.mojahid.572519
+            <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+        <a class="contact-card contact-card--link" href="https://wa.me/8801883593258" target="_blank" rel="noopener noreferrer">
+          <div class="contact-card__heading">
+            <span class="contact-card__icon"><svg class="i i--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+            <h3>WhatsApp Chat</h3>
+          </div>
+          <p>Message me on WhatsApp and I&rsquo;ll get back to you when I can.</p>
+          <span class="contact-card__link">
+            +880 1883-593258
+            <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </span>
+          <span class="sr-only">(opens in a new tab)</span>
+        </a>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div class="site-footer__brand">
+      <a class="brand" href="#home">
+        <span class="brand__mark" aria-hidden="true">MJ</span>
+        <span class="brand__text">
+          <span class="brand__name">Mushfick Jahan Mojahid</span>
+          <span class="brand__sub">Khulna &middot; Rangpur City</span>
+        </span>
+      </a>
+      <p class="site-footer__credit">
+        A personal portfolio built with hand-written HTML, CSS and JavaScript. &copy; <span id="year">2026</span>
+      </p>
+    </div>
+
+    <nav class="site-footer__nav" aria-label="Footer">
+      <p class="site-footer__heading">Explore</p>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#university">Khulna University</a></li>
+        <li><a href="#music">Music &amp; Songs</a></li>
+        <li><a href="#travel">Travel &amp; exploration</a></li>
+        <li><a href="#travel-memories">Travel Memories</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-footer__end">
+      <a class="to-top" href="#home" id="to-top">
+        Back to top
+        <span class="to-top__circle"><svg class="i" aria-hidden="true"><use href="#i-up"/></svg></span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top-fab" id="to-top-fab" type="button" aria-label="Back to top" hidden>
+  <svg class="i" aria-hidden="true"><use href="#i-up"/></svg>
+</button>
+
+<a class="whatsapp-fab" href="https://wa.me/8801883593258" target="_blank" rel="noopener noreferrer" aria-label="Chat with me on WhatsApp">
+  <span class="whatsapp-fab__tooltip" aria-hidden="true">WhatsApp Chat</span>
+  <svg class="i i--fill whatsapp-fab__icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+</a>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" hidden>
+  <div class="lightbox__backdrop" data-lightbox-close></div>
+  <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close photo viewer">
+    <svg class="i" aria-hidden="true"><use href="#i-close"/></svg>
+  </button>
+  <div class="lightbox__dialog">
+    <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Previous photo">
+      <svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img id="lightbox-image" src="assets/profile-photo.jpg" alt="">
+      <figcaption class="lightbox__caption">
+        <span id="lightbox-caption">Travel memory</span>
+        <span class="lightbox__counter" id="lightbox-counter">0 / 0</span>
+      </figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Next photo">
+      <svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg>
+    </button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
